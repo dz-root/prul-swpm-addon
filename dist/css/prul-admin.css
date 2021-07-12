@@ -1,0 +1,221 @@
+p{
+    line-height: 1.6em;
+}
+
+.prul-square-col{
+    width: 25%;
+    padding:20px;
+    margin:0px 10px;
+    box-sizing: border-box;
+    float:left;
+    display: inline;
+}
+
+.prul-half-col{
+    width: 50%;
+    padding:20px;
+    margin:0px 10px;
+    box-sizing: border-box;
+    float:left;
+    display: inline;
+}
+
+.lpf-shortcode{
+    position: relative; 
+    margin:10px 0px; 
+    padding: 2px 20px; 
+    background:#f1f1f1; 
+    border:1px solid #000;
+    border-radius:30px; 
+    width:220px;
+    font-size:16px
+}
+
+.lpf-shortcode > input {
+  border:0px;
+  padding:0px;
+  margin:0px;
+  background:none;
+}
+
+.lpf-shortcode > span {
+  position: absolute; 
+  right:0;
+  top:0;
+  padding:9px 15px; 
+  border-radius:30px;
+  background:#333; 
+  color: #fff;
+  cursor: pointer;
+}
+
+.prul-step-config {
+  border-top: 2px dashed;
+  border-color: rgb(126, 126, 126) !important;
+  margin:0; padding: 30px;
+  counter-increment: section;
+  position: relative;
+}
+
+.prul-step-config .title {
+  font-size: 26px;
+  display: block;
+  line-height: 60px;
+  margin-top: -28px;
+}
+
+.prul-step-config .right {
+  text-align:right;
+}
+  
+/** Welcome **/
+
+.prul-step-config p{
+  font-size:16px;
+}
+.prul-step-config:nth-child(even):before {
+    content: counter(section);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #007cba;
+    text-align:center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+.prul-step-config:nth-child(odd):before {
+    content: counter(section);
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #007cba;
+    text-align:center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.prul-step-config:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+  
+.prul-step-config:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+}
+  
+.prul-step-config:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+  
+.prul-step-config:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+
+.checker_result, .success-check{
+  display:none;
+  margin-top:20px;
+  padding:20px;
+  background:#f1f1f1;
+}
+
+.checker_result >ul li{
+  line-height: 20px
+}
+
+
+li.success{color:green;}
+li.error{color:rgb(204, 0, 0);}
+
+.prul-menu-item{
+  display: block;
+}
+
+.conf-item{
+  position:relative;
+  padding:10px 40px;
+  display: inline-block;
+  color:#fff;
+  background:#007cba;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  border-radius: 5px 5px 0px 0px;
+  text-align:center;
+  text-decoration: none;
+}
+
+.conf-item:hover{
+
+  color:#007cba !important;
+  background:#fff;
+
+}
+.conf-item-visited{
+
+  color:#007cba !important;
+  background:#fff;
+
+}
+
+.conf-item:first-child{border-left: 1px solid rgba(255,255,255,0.4);}
+
+.conf-item:hover, .conf-item:active, .conf-item:visited{
+  color:rgba(255, 255, 255, 0.7);
+}
+#auto_conf_sec{display:none;}
+
+.triangle-selector{
+  display:none;
+  height : 0;
+  width : 0;
+  border-top : 15px solid #007cba;
+  border-right : 15px solid transparent;
+  border-left : 15px solid transparent;
+  position:absolute;
+  bottom:-15px;
+  left:43%;
+  z-index: 1;
+ }
+
+
+
+/** Settings **/
+
+.bigLabel{
+  font-size:18px;
+}
+
+.check-result{
+  
+}
+
+/* user forms */
+#reset_password_form, #update_password_form{
+  text-align:center;
+  max-width:400px;
+  padding:20px;
+}
+
+#update_password_form > #pwd,  #update_password_form > #rpwd, #reset_password_form> #email{
+  margin-bottom: 10px;
+  width:350px;
+}
